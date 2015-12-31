@@ -1,5 +1,6 @@
 {
     "require": {
-        "php-ffmpeg/php-ffmpeg": "~0.5"
+        "vimeo/vimeo-api": "^1.2",
+        "facebook/php-sdk-v4": "^5.1"
     }
 }

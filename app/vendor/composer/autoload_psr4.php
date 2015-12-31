@@ -6,8 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),
-    'Symfony\\Component\\Filesystem\\' => array($vendorDir . '/symfony/filesystem'),
-    'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
-    'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
+    'Vimeo\\' => array($vendorDir . '/vimeo/vimeo-api/src/Vimeo'),
+    'Facebook\\' => array($vendorDir . '/facebook/php-sdk-v4/src/Facebook'),
 );

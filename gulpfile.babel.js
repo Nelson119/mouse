@@ -82,7 +82,8 @@ gulp.task('fonts', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/**/*.*',
-    '!app/*.html'
+    '!app/*.html',
+    'uploads/*.*'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -167,10 +168,12 @@ gulp.task('default', ['clean'], () => {
 
 gulp.task('php', function() {
   connect.server({
-    base : 'dist'
+    ini : '/Users/niusen/project/m/php.ini',
+    base : 'dist',
+    port : '8001'
   }, function (){
     browserSync({
-      proxy: 'localhost:8000'
+      proxy: 'localhost:8001'
     });
   });
  
